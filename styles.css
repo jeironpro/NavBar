@@ -1,0 +1,179 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #28ff32;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.menu {
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    font-size: 1.5em;
+    position: fixed;
+    right: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px #28ff32;
+}
+
+.logo-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-titulo h1 {
+    font-size: 20px;
+}
+
+.logo {
+    background-color: transparent;
+    margin: 20px;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    margin: 30px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #000;
+}
+
+li a {
+    text-decoration: none;
+    color: #000;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 1px 1px 2px #034d07,
+    -1px -1px 2px #034d07;
+    transition: all 0.3s ease-in-out;
+}
+
+li a:hover {
+    box-shadow: 1px 1px 3px #888,
+    -1px -1px 3px #888;
+}
+
+@media screen and (max-width: 1024px) {
+    .logo-titulo h1 {
+        font-size: 19px;
+    }
+    
+    .logo {
+        margin: 20px;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .logo img {
+        width: 45px;
+        height: 45px;
+    }
+    
+    li {
+        margin: 20px;
+        font-size: 16px;
+        color: #000;
+    }
+    
+    li a {
+        padding: 7px;
+    }
+}
+
+@media screen and (max-width: 824px) {
+    .menu { 
+        display: block; 
+    }
+
+    ul { 
+        background-color: #28ff32;
+        display: none;
+        flex-direction: column;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        z-index: 100;
+    } 
+
+    ul.active {
+        display: flex;
+    }
+
+    li {
+        margin: 10px 20px;
+    }
+    
+    li a {
+        padding: 5px;
+        box-shadow: none;
+    }
+}
+
+@media screen and (max-width:724px) {
+    .logo-titulo h1 {
+        font-size: 17px;
+    }
+    
+    li {
+        font-size: 15px;
+    }
+    
+    li a {
+        padding: 7px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .logo-titulo h1 {
+        font-size: 16px;
+    }
+
+    .logo {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+}

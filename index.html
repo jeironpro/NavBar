@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script>
+        function menu() {
+            var ul = document.querySelector('ul');
+            var main = document.querySelector('main');
+            ul.classList.toggle('active');
+
+            if (ul.classList.contains('active')) {
+                main.style.marginTop = '250px';
+            } else {
+                main.style.marginTop = '100px';
+            }
+        }
+    </script>
+    <header>
+        <nav>
+            <div class="logo-titulo">
+                <div class="logo">
+                    <img src="img/ninja.png" alt="LOGO">
+                </div>
+                <h1>NavBar</h1>
+                <button class="menu" onclick="menu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Configuraciones</a></li>
+                <li><a href="#">Salir</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="https://kit.fontawesome.com/25da21ab57.js" crossorigin="anonymous"></script>
+</body>
+</html>
